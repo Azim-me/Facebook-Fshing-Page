@@ -4,11 +4,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.PC {
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .mobile {
     display: none;
 }
 
 @media (max-width:767px) {
+    .PC {
+        display: none;
+    }
+
     .mobile {
         display: flex;
         flex-direction: column;
